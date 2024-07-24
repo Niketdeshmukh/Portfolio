@@ -1,0 +1,91 @@
+@import url(../globals.css);
+
+.services .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .services .boxes .box {
+    margin: 20px 0;
+    width: calc(100% / 3 - 20px);
+    text-align: center;
+    border-radius: var(--fz-xxs);
+    padding: 30px 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+    cursor: default;
+    transition: all 0.4s ease;
+    color: cadetblue;
+  }
+  
+  .services .boxes .box:hover {
+    background: #4070f4;
+    color: #fff;
+  }
+  
+  .services .boxes .box .icon {
+    height: 50px;
+    width: 50px;
+    background: #4070f4;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: var(--fz-lg);
+    color: #fff;
+    margin: 0 auto 10px auto;
+    transition: all 0.4s ease;
+  }
+  
+  .boxes .box:hover .icon {
+    background-color: #fff;
+    color: #4070f4;
+  }
+  
+  .services .boxes .box:hover .topic,
+  .services .boxes .box:hover p {
+    color: #0e2431;
+    transition: all 0.4s ease;
+  }
+  
+  .services .boxes .box:hover .topic,
+  .services .boxes .box:hover p {
+    color: #fff;
+  }
+  
+  .numbered__heading_03 {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    /* margin: 10px 8.8rem 40px; */
+    /* width: 100%; */
+    font-size: clamp(var(--fz-md), 3vw, var(--fz-xl));
+    white-space: nowrap;
+  }
+  
+  .numbered__heading_03 span {
+    font-size: larger;
+    margin-top: -17px;
+  }
+  
+  .numbered__heading_03::before {
+    position: relative;
+    bottom: 4px;
+    counter-increment: section 3;
+    content: "0" counter(section) ".";
+    margin-right: 10px;
+    color: var(--green);
+    font-family: var(--font-mono);
+    font-size: clamp(16px, 3vw, 20px);
+    font-weight: 400;
+  }
+  .numbered__heading_03::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: -5px;
+    width: 300px;
+    height: 1px;
+    margin-left: var(--fz-xl);
+    background-color: var(--lightest-navy);
+  }
