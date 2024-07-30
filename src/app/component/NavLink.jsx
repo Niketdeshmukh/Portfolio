@@ -1,10 +1,11 @@
 import Link from "next/link";
+import "../../app/Header.css"
 
 const NavLink = ({ href, title }) => {
   return (
     <Link
       href={href}
-      className="block py-2 pl-3 pr-4 text-[#26a2fa] sm:text-xl rounded md:p-0 hover:text-white"
+      className="menu"
     >
       {title}
     </Link>

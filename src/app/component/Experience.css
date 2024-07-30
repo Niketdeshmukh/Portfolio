@@ -305,7 +305,7 @@
     .timeline-block
     .timeline-img
     .sprite.university {
-    /* background-image: url(./Images/graduate-cap.png); */
+    background-image: url(../../images/graduate-cap.png) ;
   }
   
   #experience-section
@@ -314,7 +314,7 @@
     .timeline-block
     .timeline-img
     .sprite.research {
-    /* background-image: url(./Images/search.png); */
+    background-image: url(../../images/search.png);
   }
   
   #experience-section
@@ -323,7 +323,7 @@
     .timeline-block
     .timeline-img
     .sprite.industry {
-    /* background-image: url(./Images/briefcase.png); */
+    background-image: url(../../images/briefcase.png);
   }
   
   #experience-section
@@ -332,7 +332,7 @@
     .timeline-block
     .timeline-img
     .sprite.academic {
-    /* background-image: url(./Images/notebook.png); */
+    background-image: url(../../images/notebook.png);
   }
   
   #experience-section
