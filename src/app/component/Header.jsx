@@ -7,6 +7,7 @@ import {Bars3Icon, XMarkIcon} from "@heroicons/react/24/solid"
 import MenuOverlay from "./MenuOverlay";
 import { SocialIcon } from 'react-social-icons';
 import gsap from "gsap";
+import { useGSAP } from '@gsap/react'; 
 
 const navLinks = [
   {
@@ -42,7 +43,38 @@ const socialLinks = [
 
 const Navbar = () => {
 
-  
+  useGSAP(() => {
+    const t1 = gsap.timeline();
+    t1.from(".logo", {
+      opacity: 0,
+      scale: 1.3,
+      duration: 0.5,
+      delay:4.4
+    })
+      .from(
+        ".menu li",
+        {
+          opacity: 0,
+          stagger: 0.1,
+          y: -15,
+        },
+        "niket"
+      )
+      .from(
+        ".media-icons a",
+        {
+          opacity: 0,
+          stagger: 0.1,
+          y: -10,
+        },
+        "niket"
+      )
+      .from(".ele__position", {
+        opacity: 0,
+        y: 20,
+        duration: 0.2,
+      })
+  })
 
   const [navbarOpen,setNavbarOpen] = useState(false);
   return (

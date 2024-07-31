@@ -7,7 +7,45 @@ import "../../app/component/HeroSection.css";
 const HeroSection = () => {
   const container = useRef();
 
-  
+  useGSAP(() => {
+    const t1 = gsap.timeline();
+    
+      t1.from(".text .text__one", {
+        opacity: 0,
+        y: 20,
+        delay:4.7
+      })
+      .from(".text .text__two", {
+        opacity: 0,
+        y: 20,
+        duration: 0.2,
+      })
+      .from(".text .text__down", {
+        opacity: 0,
+        y: 20,
+        duration: 0.2,
+      })
+      .from(".ele__position", {
+        opacity: 0,
+        y: 20,
+        duration: 0.2,
+      })
+      .from(".text .text__three", {
+        opacity: 0,
+        y: 20,
+        duration: 0.2,
+      })
+      .from(".text .text__four", {
+        opacity: 0,
+        y: 20,
+        duration: 0.2,
+      })
+      .from(" .button__resume", {
+        opacity: 0,
+        y: 20,
+        duration: 0.2,
+      });
+  }, { scope: container });
 
   return (
     <section ref={container} className="home" id="home">
