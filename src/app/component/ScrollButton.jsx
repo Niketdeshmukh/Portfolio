@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../app/component/ScrollButton.css'
+import '../styles/ScrollButton.css';
 const ScrollButton = () => {
   return (
     <> <div className="scroll-button">

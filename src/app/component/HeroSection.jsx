@@ -2,7 +2,7 @@
 import React, { useRef } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react'; 
-import "../../app/component/HeroSection.css";
+import '../styles/HeroSection.css';
 
 const HeroSection = () => {
   const container = useRef();

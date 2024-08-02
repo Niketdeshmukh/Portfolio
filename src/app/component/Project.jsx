@@ -1,6 +1,6 @@
 import React from 'react'
 import OtherProject from './OtherProject'
-import "../../app/component/Project.css"
+import '../styles/Project.css';
 const Project = () => {
   return (
     <>

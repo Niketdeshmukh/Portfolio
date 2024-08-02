@@ -2,7 +2,7 @@
 "use client";
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
-import "./Loader.css"
+import '../styles/Loader.css';
 
 const Loader = () => {
   const preloaderRef = useRef(null);

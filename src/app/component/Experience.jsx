@@ -1,6 +1,6 @@
 "use client";
 import React, { useRef, useEffect } from 'react';
-import "../../app/component/Experience.css";
+import '../styles/Experience.css';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 

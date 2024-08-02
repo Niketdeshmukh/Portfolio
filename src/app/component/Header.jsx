@@ -2,7 +2,7 @@
 import Link from "next/link";
 import React, { useState,useRef,useEffect } from "react";
 import NavLink from "./NavLink";
-import "../../app/Header.css"
+import '../styles/Header.css';
 import {Bars3Icon, XMarkIcon} from "@heroicons/react/24/solid"
 import MenuOverlay from "./MenuOverlay";
 import { SocialIcon } from 'react-social-icons';

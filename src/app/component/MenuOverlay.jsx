@@ -1,6 +1,6 @@
 import React from "react";
 import NavLink from "./NavLink";
-import "../../app/Header.css"
+import '../styles/Header.css';
 const MenuOverlay = ({ links }) => {
   return (
     <ul className="bg-black menu" style={ {position: 'fixed',

@@ -1,5 +1,5 @@
 import React from 'react'
-import "../../app/component/OtherProjects.css"
+import '../styles/otherProjects.css';
 const otherProjects = () => {
   return (
     <>

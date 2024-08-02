@@ -1,6 +1,6 @@
 "use client";
 import React, { useRef } from 'react';
-import "../../app/component/Contact.css";
+import '../styles/Contact.css';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 

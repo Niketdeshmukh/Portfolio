@@ -1,5 +1,5 @@
 import Link from "next/link";
-import "../../app/Header.css"
+import '../styles/Header.css';
 
 const NavLink = ({ href, title }) => {
   return (
