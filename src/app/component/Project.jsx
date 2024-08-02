@@ -4,65 +4,65 @@ import "../../app/component/Project.css"
 const Project = () => {
   return (
     <>
-     <section class="services" id="skills">
-    <div class="content">
-      <h2 class="numbered__heading_03"><span>My Projects</span> </h2>
-      <div class="boxes">
-        <div class="box">
-          <div class="icon">
-            <i class="fas fa-desktop"></i>
+     <section className="services" id="skills">
+    <div className="content">
+      <h2 className="numbered__heading_03"><span>My Projects</span> </h2>
+      <div className="boxes">
+        <div className="box">
+          <div className="icon">
+            <i className="fas fa-desktop"></i>
           </div>
-          <div class="topic">Web Development</div>
+          <div className="topic">Web Development</div>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
             autem quam odio, qui voluptatem eligendi?
           </p>
         </div>
-        <div class="box">
-          <div class="icon">
-            <i class="fas fa-paint-brush"></i>
+        <div className="box">
+          <div className="icon">
+            <i className="fas fa-paint-brush"></i>
           </div>
-          <div class="topic">Graphic Design</div>
+          <div className="topic">Graphic Design</div>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
             autem quam odio, qui voluptatem eligendi?
           </p>
         </div>
-        <div class="box">
-          <div class="icon">
-            <i class="fas fa-chart-line"></i>
+        <div className="box">
+          <div className="icon">
+            <i className="fas fa-chart-line"></i>
           </div>
-          <div class="topic">Digital Marketing</div>
+          <div className="topic">Digital Marketing</div>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
             autem quam odio, qui voluptatem eligendi?
           </p>
         </div>
-        <div class="box">
-          <div class="icon">
-            <i class="fab fa-android"></i>
+        <div className="box">
+          <div className="icon">
+            <i className="fab fa-android"></i>
           </div>
-          <div class="topic">Icon Design</div>
+          <div className="topic">Icon Design</div>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
             autem quam odio, qui voluptatem eligendi?
           </p>
         </div>
-        <div class="box">
-          <div class="icon">
-            <i class="fas fa-camera-retro"></i>
+        <div className="box">
+          <div className="icon">
+            <i className="fas fa-camera-retro"></i>
           </div>
-          <div class="topic">Photography</div>
+          <div className="topic">Photography</div>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
             autem quam odio, qui voluptatem eligendi?
           </p>
         </div>
-        <div class="box">
-          <div class="icon">
-            <i class="fas fa-tablet-alt"></i>
+        <div className="box">
+          <div className="icon">
+            <i className="fas fa-tablet-alt"></i>
           </div>
-          <div class="topic">Apps Devlopment</div>
+          <div className="topic">Apps Devlopment</div>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
             autem quam odio, qui voluptatem eligendi?

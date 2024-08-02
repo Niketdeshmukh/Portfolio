@@ -172,6 +172,16 @@ p > a:hover:after {
 ::-webkit-scrollbar {
   width: 0px;
 }
+.swiper {
+  height: 80%;
+  width: 100%;
+}
+
+.swiper .swiper-pagination-bullet-active {
+  transform: scale(2);
+  transform-origin: center;
+}
+
 /* 
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
