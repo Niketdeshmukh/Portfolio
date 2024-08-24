@@ -41,9 +41,8 @@ const DemoSlider = ({ data }) => {
                       {title}
                     </p>
                     {buttons.length > 0 ? (
-                      <p className=" bg-gray-800 inline-block px-9 py-2 rounded-full text-white mt-10 lg:mt-20">
-                        <SliderButtons buttons={buttons} />
-                      </p>
+                       <SliderButtons buttons={buttons} />
+                        
                     ) : null}
                   </div>
                 </div>
