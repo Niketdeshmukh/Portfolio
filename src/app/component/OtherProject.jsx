@@ -1,15 +1,45 @@
 import React from "react";
 import "../styles/otherProjects.css";
 import Image from "next/image";
+import Link from "next/link";
+
+import { SocialIcon } from "react-social-icons";
+const socialLinks = [
+  {
+    url: "https://github.com/Niketdeshmukh",
+    externalUrl: "https://techfest-frontend.vercel.app/",
+    fgColor: "#64FFDA",
+    style: { width: "2.5rem", marginRight: "-3rem" },
+  },
+  {
+    url: "https://github.com/Niketdeshmukh/Chat-App",
+    externalUrl: "https://chatwithfriend.netlify.app/",
+    fgColor: "#64FFDA",
+    style: { width: "2.3rem", marginRight: "-3rem" },
+  },
+  {
+    url: "https://github.com/Niketdeshmukh/portfolio",
+    externalUrl: "https://portfolio.com",
+    fgColor: "#64FFDA",
+    style: { width: "2.3rem", marginRight: "-3rem" },
+  },
+  {
+    url: "https://github.com/Niketdeshmukh/Resume-Maker",
+    externalUrl: "http://resume-maker-kappa.vercel.app/",
+    fgColor: "#64FFDA",
+    style: { width: "2.3rem", marginRight: "-3rem" },
+  },
+  {
+    url: "https://github.com/Niketdeshmukh/handyy",
+    externalUrl: "https://handyy.vercel.com",
+    fgColor: "#64FFDA",
+    style: { width: "2.3rem", marginRight: "-3rem" },
+  },
+];
 const OtherProjects = () => {
   return (
     <>
-      <section
-        className="section other-projects"
-        data-sr-id="5"
-        id="projects"
-        // style="visibility: visible; opacity: 1; transition: opacity 0.6s cubic-bezier(0.694, 0, 0.335, 1) 0s;"
-      >
+      <section className="section other-projects" data-sr-id="5" id="projects">
         <div className="section__title">Projects</div>
         <div className="section__content">
           <div className="project">
@@ -23,64 +53,57 @@ const OtherProjects = () => {
                 Tech Fest Website
               </a>{" "}
             </div>
-            <Image
-              src="/techfest.png"
-              width={400}
-              height={400}
-              style={{ margin: "20px 0 20px 0px" }}
-            ></Image>
-            {/* <div
-              className="social_icons"
-              style={{
-                color: "#007bff",
-                width: "2.5rem",
-                display: "flex",
-                flexDirection: "row",
-                float: "right",
-                marginRight:'1rem'
-              }}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                role="img"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="feather feather-github"
+            <div className="hello_world"
+            style={{display:'flex'
+              ,flexDirection:'column'
+            }}>
+              
+              <Image
+                src="/techfest.png"
+                width={400}
+                height={400}
+                style={{ margin: "20px 0 20px 0px" }}
+              ></Image>
+              <div
+                className="social_icons"
+                style={{
+                  // marginRight: "3rem",
+                  // gap: "0.2rem !important",
+                  // marginLeft: "auto",
+                }}
               >
-                <title>GitHub</title>
-                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-              </svg> 
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                role="img"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="feather feather-external-link"
-              >
-                <title>External Link</title>
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                <polyline points="15 3 21 3 21 9"></polyline>
-                <line x1="10" y1="14" x2="21" y2="3"></line>
-              </svg>
-            </div> */}
+                <ul
+                  className=" flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0"style={{ gap: "1.7rem" }}
+                >
+                  <li>
+                    <SocialIcon
+                      url={socialLinks[0].url}
+                      bgColor="transparent"
+                      fgColor="#64FFDA"
+                      style={socialLinks[0].style}
+                    />{" "}
+                  </li>
+                  <li>
+                    {" "}
+                    <SocialIcon
+                      url={socialLinks[0].externalUrl}
+                      bgColor="transparent"
+                      fgColor="#64FFDA"
+                      style={socialLinks[0].style}
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
             <br />
             <p>
               Techfizz Website is a comprehensive platform for our college’s
               annual tech fest, our team has built using React.js, node.js,
               MongoDB and vercel for reliable and scalable hosting.
             </p>
-            <p>Over {" "}
-              <a href="">
-             100+ students
-              </a>{" "}registered and made payment.</p>
+            <p>
+              Over <a href="">100+ students</a> registered and made payment.
+            </p>
 
             <div className="project__used">
               {" "}
@@ -102,12 +125,54 @@ const OtherProjects = () => {
                 Chat Application
               </a>{" "}
             </div>
-            <Image
-              src="/chatapp.png"
-              width={400}
-              height={400}
-              style={{ margin: "20px 0 20px 0px" }}
-            ></Image>
+            <div
+              style={{display:'flex'
+                ,flexDirection:'column'
+              }}
+            >
+              <Image
+                src="/chatapp.png"
+                width={400}
+                height={400}
+                style={{ margin: "20px 0 20px 0px" }}
+              ></Image>
+              <div
+                className="social_icons"
+                style={{
+                  // color: "#007bff",
+                  // width: "2.5rem",
+                  // display: "flex",
+                  // flexDirection: "row",
+                  // float: "right",
+                  // marginRight: "3rem",
+                  // gap: "0.5rem !important",
+                  // marginLeft: "auto",
+                }}
+              >
+                <ul
+                  className=" flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0"
+                  style={{ gap: "1.7rem" }}
+                >
+                  <li>
+                    <SocialIcon
+                      url={socialLinks[1].url}
+                      bgColor="transparent"
+                      fgColor="#64FFDA"
+                      style={socialLinks[1].style}
+                    />{" "}
+                  </li>
+                  <li>
+                    {" "}
+                    <SocialIcon
+                      url={socialLinks[1].externalUrl}
+                      bgColor="transparent"
+                      fgColor="#64FFDA"
+                      style={socialLinks[1].style}
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
             <p>
               {" "}
               It is a chat application that facilitates seamless communication
@@ -138,16 +203,58 @@ const OtherProjects = () => {
                 Portfolio Website
               </a>{" "}
             </div>
-            <Image
-              src="/portfolio.png"
-              width={400}
-              height={400}
-              style={{ margin: "20px 0 20px 0px" }}
-            ></Image>
+            <div
+              style={{display:'flex'
+                ,flexDirection:'column'
+              }}
+            >
+              <Image
+                src="/portfolio.png"
+                width={400}
+                height={400}
+                style={{ margin: "20px 0 20px 0px" }}
+              ></Image>
+              <div
+                className="social_icons"
+                style={{
+                  // color: "#007bff",
+                  // width: "2.5rem",
+                  // display: "flex",
+                  // flexDirection: "row",
+                  // float: "right",
+                  // marginRight: "3rem",
+                  // gap: "0.5rem !important",
+                  // marginLeft: "auto",
+                }}
+              >
+                <ul
+                  className=" flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0"
+                  style={{ gap: "1.7rem" }}
+                >
+                  <li>
+                    <SocialIcon
+                      url={socialLinks[2].url}
+                      bgColor="transparent"
+                      fgColor="#64FFDA"
+                      style={socialLinks[2].style}
+                    />{" "}
+                  </li>
+                  <li>
+                    {" "}
+                    <SocialIcon
+                      url={socialLinks[2].externalUrl}
+                      bgColor="transparent"
+                      fgColor="#64FFDA"
+                      style={socialLinks[2].style}
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
             <p>
               Design personal website from scratch.Used designing tools such as
               Figma.
-             <br /> Implemented best practices such as mininized the bundle
+              <br /> Implemented best practices such as mininized the bundle
               size.
             </p>
             <div className="project__used">
@@ -170,15 +277,61 @@ const OtherProjects = () => {
               >
                 Resume Builder
               </a>{" "}
-              <Image
-              src="/resume.png"
-              width={400}
-              height={400}
-              style={{ margin: "20px 0 20px 0px" }}
-            ></Image>
+              <div
+                style={{display:'flex'
+                  ,flexDirection:'column'
+                }}
+              >
+                <Image
+                  src="/resume.png"
+                  width={400}
+                  height={400}
+                  style={{ margin: "20px 0 20px 0px" }}
+                ></Image>
+                <div
+                  className="social_icons"
+                  style={{
+                    // color: "#007bff",
+                    // width: "2.5rem",
+                    // display: "flex",
+                    // flexDirection: "row",
+                    // float: "right",
+                    // marginRight: "3rem",
+                    // gap: "0.5rem !important",
+                    // marginLeft: "auto",
+                  }}
+                >
+                  <ul
+                    className=" flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0"
+                    style={{ gap: "1.7rem" }}
+                  >
+                    <li>
+                      <SocialIcon
+                        url={socialLinks[3].url}
+                        bgColor="transparent"
+                        fgColor="#64FFDA"
+                        style={socialLinks[3].style}
+                      />{" "}
+                    </li>
+                    <li>
+                      {" "}
+                      <SocialIcon
+                        url={socialLinks[3].externalUrl}
+                        bgColor="transparent"
+                        fgColor="#64FFDA"
+                        style={socialLinks[3].style}
+                      />
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
             <p>
-            Developed a responsive resume builder using React, HTML, CSS, and Bootstrap. The application provides an intuitive interface for users to easily create and customize resumes with real-time previews, simplifying the resume creation process.</p>
+              Developed a responsive resume builder using React, HTML, CSS, and
+              Bootstrap. The application provides an intuitive interface for
+              users to easily create and customize resumes with real-time
+              previews, simplifying the resume creation process.
+            </p>
             <div className="project__used">
               {" "}
               <span className="project__used__item">JavaScript</span>{" "}
@@ -190,22 +343,63 @@ const OtherProjects = () => {
           <div className="project">
             <div className="project__name">
               {" "}
-              <a
-                href=""
-                target="_blank"
-                className="arrow__link"
-              >
+              <a href="" target="_blank" className="arrow__link">
                 Handyy Craft Website
               </a>{" "}
             </div>
-            <Image
-              src="/handyy.png"
-              width={400}
-              height={400}
-              style={{ margin: "20px 0 20px 0px" }}
-            ></Image>
+            <div
+              style={{display:'flex'
+                ,flexDirection:'column'
+              }}
+            >
+              <Image
+                src="/handyy.png"
+                width={400}
+                height={400}
+                style={{ margin: "20px 0 20px 0px" }}
+              ></Image>
+              <div
+                className="social_icons"
+                style={{
+                  // color: "#007bff",
+                  // width: "2.5rem",
+                  // display: "flex",
+                  // flexDirection: "row",
+                  // float: "right",
+                  // marginRight: "3rem",
+                  // gap: "0.5rem !important",
+                  // marginLeft: "auto",
+                }}
+              >
+                <ul
+                  className=" flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0"
+                  style={{ gap: "1.7rem" }}
+                >
+                  <li>
+                    <SocialIcon
+                      url={socialLinks[4].url}
+                      bgColor="transparent"
+                      fgColor="#64FFDA"
+                      style={socialLinks[4].style}
+                    />{" "}
+                  </li>
+                  <li>
+                    {" "}
+                    <SocialIcon
+                      url={socialLinks[4].externalUrl}
+                      bgColor="transparent"
+                      fgColor="#64FFDA"
+                      style={socialLinks[4].style}
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
             <p>
-            Created "Handyy," a React.js-based website for handcrafters and art workers to collectively showcase their art. Built with HTML, CSS, and React.js, the platform offers a dedicated space for artists to increase visibility of their creations.
+              Created "Handyy," a React.js-based website for handcrafters and
+              art workers to collectively showcase their art. Built with HTML,
+              CSS, and React.js, the platform offers a dedicated space for
+              artists to increase visibility of their creations.
             </p>
             <div className="project__used">
               {" "}
@@ -217,7 +411,7 @@ const OtherProjects = () => {
           </div>
         </div>
       </section>
-    </> 
+    </>
   );
 };
 

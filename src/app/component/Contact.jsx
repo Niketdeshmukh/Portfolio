@@ -154,7 +154,7 @@ const Contact = () => {
         <div className="content">
           <div className="text">
           <div className="button__resume">
-         <Link href=""> <button>Say Hello</button></Link>
+         <Link href="mailto:niketdeshmukh2002@gmail.com" rel="noopener noreferrer" target="_blank"> <button>Say Hello</button></Link>
         </div>
           </div>
         </div>

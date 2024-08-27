@@ -200,7 +200,7 @@ p > a:hover:after {
 
 @media screen and (max-width: 1280px) {
   .section {
-    padding: 100px !important;
+    /* padding: 100px !important; */
   }
 }
 
@@ -233,7 +233,7 @@ p > a:hover:after {
     margin-right: 50px !important;
   }
   .section {
-    padding: 40px !important;
+    padding: 30px !important;
   }
 }
 
