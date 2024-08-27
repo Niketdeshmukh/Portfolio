@@ -249,9 +249,18 @@
     .code-editor {
       margin-top: 50px;
     }
+    
   
     #headerwrap .fa-chevron-down {
       margin-top: 20px;
+    }
+  }
+  @media screen and (max-width: 500px){
+    #headerwrap{
+      padding: 1rem;
+    }
+    .button__resume button{
+      padding: 0px 5px !important;
     }
   }
   .row {

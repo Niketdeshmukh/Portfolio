@@ -111,11 +111,14 @@
 
   @media (max-width: 500px) {
     .home .text__two {
-      font-size: 55px;
+      font-size: 35px;
     }
   
     .home .text__three {
       font-size: 33px;
+    }
+    .text__one, .text__two,.text__down,.text__three,.text__four,.button__resume{
+      margin: 6px 2rem !important;
     }
   }  
 
@@ -124,7 +127,7 @@
       font-size: var(--fz-xl);
     }
     .text__two {
-      font-size: 45px !important;
+      font-size: 35px !important;
       line-height: 70px !important;
     }
     .text__down {
