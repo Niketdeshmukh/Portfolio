@@ -8,7 +8,7 @@ const ScrollButton = () => {
       {" "}
       <div className="scroll-button">
         <NavLink href="#home">
-          <Image src="../../images/pointing-up.png" width={500}></Image>
+          <Image src="../../images/pointing-up.png" width={500} alt=""></Image>
         </NavLink>
       </div>
     </>

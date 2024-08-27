@@ -118,7 +118,7 @@ const Contact = () => {
                   </ul>
                   <div className="code">
                     <p className="comment">
-                      /* Welcome to Portfolio website! */
+                       Welcome to Portfolio website! 
                     </p>
                     <p className="about__para">
                       <span className="selector">#ABOUT</span>
@@ -141,7 +141,7 @@ const Contact = () => {
                       </p>
                       <p className="indent">
                         <span className="prop">email:</span>
-                        url('niketdeshmukh2002@gmail.com');
+                        url(&#39;niketdeshmukh2002@gmail.com&#39;);
                       </p>
                     </div>
                     <p className="about__bras">{"}"}</p>

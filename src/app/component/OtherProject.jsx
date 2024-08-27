@@ -62,6 +62,7 @@ const OtherProjects = () => {
                 src="/techfest.png"
                 width={400}
                 height={400}
+                alt=""
                 style={{ margin: "20px 0 20px 0px" }}
               ></Image>
               <div
@@ -134,6 +135,7 @@ const OtherProjects = () => {
                 src="/chatapp.png"
                 width={400}
                 height={400}
+                alt=""
                 style={{ margin: "20px 0 20px 0px" }}
               ></Image>
               <div
@@ -211,6 +213,7 @@ const OtherProjects = () => {
               <Image
                 src="/portfolio.png"
                 width={400}
+                alt=""
                 height={400}
                 style={{ margin: "20px 0 20px 0px" }}
               ></Image>
@@ -286,6 +289,7 @@ const OtherProjects = () => {
                   src="/resume.png"
                   width={400}
                   height={400}
+                  alt=""
                   style={{ margin: "20px 0 20px 0px" }}
                 ></Image>
                 <div
@@ -356,6 +360,7 @@ const OtherProjects = () => {
                 src="/handyy.png"
                 width={400}
                 height={400}
+                alt=""
                 style={{ margin: "20px 0 20px 0px" }}
               ></Image>
               <div
@@ -396,7 +401,7 @@ const OtherProjects = () => {
               </div>
             </div>
             <p>
-              Created "Handyy," a React.js-based website for handcrafters and
+              Created Handyy a React.js-based website for handcrafters and
               art workers to collectively showcase their art. Built with HTML,
               CSS, and React.js, the platform offers a dedicated space for
               artists to increase visibility of their creations.

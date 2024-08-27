@@ -81,7 +81,7 @@ const About = () => {
               valuable experience through internships.
             </p>
             <p>
-              Fast-forward to today, and I’ve had the privilege of working on
+              Fast-forward to today, and I&#39;ve had the privilege of working on
               <a href="" rel="noopener noreferrer" target="_blank">
                 my own brand
               </a>{" "}
@@ -89,12 +89,12 @@ const About = () => {
               <a href="" rel="noopener noreferrer" target="_blank">
                 a start-up
               </a>
-              , and an application for solving real world problems with AI.Recently, I’ve been diving into GenAI projects, expanding my skills and exploring new frontiers in the tech world.
+              , and an application for solving real world problems with AI.Recently, I&#39;ve been diving into GenAI projects, expanding my skills and exploring new frontiers in the tech world.
             </p>
             <p>
-            My focus is on creating impactful and efficient solutions, and I'm constantly learning and growing in this dynamic field.
+            My focus is on creating impactful and efficient solutions, and I&#39;m constantly learning and growing in this dynamic field.
             </p>
-            <p>I'm excited to continue pushing the boundaries of what's possible with technology and making meaningful contributions to the industry.</p>
+            <p>I&#39;m excited to continue pushing the boundaries of what&#39;s possible with technology and making meaningful contributions to the industry.</p>
             <p>Here are a few technologies I’ve been working with recently:</p>
             <ul className="skills-list">
               <li>JavaScript (ES6+)</li>
