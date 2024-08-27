@@ -30,8 +30,8 @@ const socialLinks = [
     style: { width: "2.3rem", marginRight: "-3rem" },
   },
   {
-    url: "https://github.com/Niketdeshmukh/handyy",
-    externalUrl: "https://handyy.vercel.com",
+    url: "https://github.com/Niketdeshmukh/Codebite",
+    externalUrl: "https://codebite.vercel.app/",
     fgColor: "#64FFDA",
     style: { width: "2.3rem", marginRight: "-3rem" },
   },
