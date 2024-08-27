@@ -1,5 +1,42 @@
 @import url(../globals.css);
 
+.numbered__heading_03 {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  /* margin: 10px 8.8rem 40px; */
+  /* width: 100%; */
+  font-size: clamp(var(--fz-md), 3vw, var(--fz-xl));
+  white-space: nowrap;
+}
+
+.numbered__heading_03 span {
+  font-size: larger;
+  margin-top: -17px;
+}
+
+.numbered__heading_03::before {
+  position: relative;
+  bottom: 4px;
+  counter-increment: section 3;
+  content: "0" counter(section) ".";
+  margin-right: 10px;
+  color: var(--green);
+  font-family: var(--font-mono);
+  font-size: clamp(16px, 3vw, 20px);
+  font-weight: 400;
+}
+.numbered__heading_03::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: -5px;
+  width: 300px;
+  height: 1px;
+  margin-left: var(--fz-xl);
+  background-color: var(--lightest-navy);
+}
 
 .arrow__link {
     -webkit-transition: all 0.2s ease-in-out;

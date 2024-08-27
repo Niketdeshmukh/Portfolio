@@ -13,6 +13,9 @@ const navLinks = [
   {
     title: "About",
     path: "#about",
+  },{
+    title: "Experience",
+    path: "#experience-section",
   },
   {
     title: "Projects",
@@ -25,17 +28,17 @@ const navLinks = [
 ];
 const socialLinks = [
   {
-    url: "https://github.com",
+    url: "https://github.com/Niketdeshmukh",
     fgColor: "#64FFDA",
     style: { width: '2.5rem',marginRight:'-3rem' }
   },
   {
-    url: "https://twitter.com",
+    url: "https://x.com/Niketdeshmukh6",
     fgColor: "#64FFDA",
-    style: { width: '2.5rem',marginRight:'-3rem' }
+    style: { width: '2.3rem',marginRight:'-3rem' }
   },
   {
-    url: "https://linkedin.com",
+    url: "https://www.linkedin.com/in/niket-deshmukh-940a85204/",
     fgColor: "#64FFDA",
     style: { width: '2.5rem' }
   }

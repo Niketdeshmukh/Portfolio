@@ -55,11 +55,11 @@
     color: var(--green);
   }
   
-  .home .button__resume {
+  .button__resume {
     margin: 10px 4rem;
   }
   
-  .home .button__resume button {
+   .button__resume button {
     outline: none;
     padding: 8px 16px;
     border-radius: 6px;
@@ -72,11 +72,14 @@
     transition: all 0.4s ease;
   }
   
-  .home .button__resume button:hover {
-    background-color: var(--green-tint);
+   .button__resume button:hover,
+   .button__resume button:active {
     border: 2px solid var(--green);
     color: var(--green);
+    transform: translate(-5px, -5px); /* Moves the button slightly to the bottom-right */
+    box-shadow: 5px 5px 0px #64FFDA; /* Green shadow */
   }
+  
 .home .text__two {
     font-size: 65px;
   }

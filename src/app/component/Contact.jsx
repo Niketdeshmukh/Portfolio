@@ -1,59 +1,75 @@
 "use client";
-import React, { useRef } from 'react';
-import '../styles/Contact.css';
-import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
+import React, { useRef } from "react";
+import "../styles/Contact.css";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+import Link from "next/link";
 
 const Contact = () => {
   const container = useRef();
 
-  useGSAP(() => {
-    const t1 = gsap.timeline();
-    gsap.timeline({
-      scrollTrigger: {
-        trigger: [".contact"],
-        scroller: "body",
-        start: "top 60%",
-        end: "bottom 90%",
-        // markers:true,
-        scrub: 1,
-      },
-    })
-    .from(".numbered__heading_04", {
-      y: -20,
-      opacity: 0,
-      duration: 1.3,
-    })
-    .from(".container", {
-      y: -50,
-      opacity: 0,
-      duration: 2,
-      delay: "2",
-      scrub: 1,
-    })
-    .from([".code", ".comment", ".about__para", ".indent", ".no-moblie", ".about__bras"], {
-      opacity: 0,
-      y: -20,
-      duration: 1,
-      stagger: 1,
-      delay: "1",
-    })
-    .from(".content .button", {
-      y: -30,
-      opacity: 0,
-      duration: 2,
-      delay: "2",
-      scrub: 1,
-    })
-    .from([".footer__content"], {
-      y: -30,
-      opacity: 0,
-      duration: 2,
-      scrub: 1,
-      stagger: 1,
-      delay: 2,
-    });
-  }, { container });
+  // useGSAP(
+  //   () => {
+  //     const t1 = gsap.timeline();
+  //     gsap
+  //       .timeline({
+  //         scrollTrigger: {
+  //           trigger: [".contact"],
+  //           scroller: "body",
+  //           start: "top 60%",
+  //           end: "bottom 90%",
+  //           // markers:true,
+  //           scrub: 1,
+  //         },
+  //       })
+  //       .from(".numbered__heading_04", {
+  //         y: -20,
+  //         opacity: 0,
+  //         duration: 1.3,
+  //       })
+  //       .from(".container", {
+  //         y: -50,
+  //         opacity: 0,
+  //         duration: 2,
+  //         delay: "2",
+  //         scrub: 1,
+  //       })
+  //       .from(
+  //         [
+  //           ".code",
+  //           ".comment",
+  //           ".about__para",
+  //           ".indent",
+  //           ".no-moblie",
+  //           ".about__bras",
+  //         ],
+  //         {
+  //           opacity: 0,
+  //           y: -20,
+  //           duration: 1,
+  //           stagger: 1,
+  //           delay: "1",
+  //         }
+  //       )
+  //       .from(".content .button", {
+  //         y: -30,
+  //         opacity: 0,
+  //         duration: 2,
+  //         delay: "2",
+  //         scrub: 1,
+  //       })
+  //       .from([".footer__content"], {
+  //         y: -30,
+  //         opacity: 0,
+  //         duration: 2,
+  //         scrub: 1,
+  //         stagger: 1,
+  //         delay: 2,
+  //       });
+  //   },
+  //   { container }
+  // );
 
   const closeTab = () => {
     // Add your logic here for closing the tab
@@ -64,7 +80,9 @@ const Contact = () => {
     <>
       <section ref={container} className="contact" id="contact">
         <div className="content">
-          <h2 className="numbered__heading_04"><span>Contact Me</span></h2>
+          <h2 className="numbered__heading_04">
+            <span>Contact Me</span>
+          </h2>
         </div>
         <div id="headerwrap">
           <div className="container">
@@ -77,7 +95,9 @@ const Contact = () => {
                       <li className="button"></li>
                       <li className="button"></li>
                     </ul>
-                    <div className="file-path">~/Users/NIKET/portfolio_website</div>
+                    <div className="file-path">
+                      ~/Users/NIKET/portfolio_website
+                    </div>
                   </div>
                   <ul className="line-numbers">
                     <li>1</li>
@@ -97,7 +117,9 @@ const Contact = () => {
                     <li className="no-mobile">16</li>
                   </ul>
                   <div className="code">
-                    <p className="comment">/* Welcome to Portfolio website! */</p>
+                    <p className="comment">
+                      /* Welcome to Portfolio website! */
+                    </p>
                     <p className="about__para">
                       <span className="selector">#ABOUT</span>
                       &#123;
@@ -112,18 +134,17 @@ const Contact = () => {
                     </p>
                     <div className="no-mobile">
                       <p className="indent">
-                        <span className="prop">description:</span>
-                        A special interest group that supports women who study or are interested in Computer and Information
-                        Science at Northeastern University;
+                        <span className="prop">description:</span>A portfolio
+                        showcasing expertise in web development, software
+                        engineering, and GenAI projects, highlighting innovative
+                        solutions, real-time projects;
                       </p>
                       <p className="indent">
                         <span className="prop">email:</span>
                         url('niketdeshmukh2002@gmail.com');
                       </p>
                     </div>
-                    <p className="about__bras">
-                      {/* } */}
-                    </p>
+                    <p className="about__bras">{"}"}</p>
                   </div>
                 </div>
               </div>
@@ -132,14 +153,14 @@ const Contact = () => {
         </div>
         <div className="content">
           <div className="text">
-            <div className="button">
-              <button>Let's Chat</button>
-            </div>
+          <div className="button__resume">
+         <Link href=""> <button>Say Hello</button></Link>
+        </div>
           </div>
         </div>
       </section>
     </>
   );
-}
+};
 
 export default Contact;

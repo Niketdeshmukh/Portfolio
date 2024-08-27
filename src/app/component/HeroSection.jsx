@@ -1,6 +1,7 @@
 "use client";
 import React, { useRef } from 'react';
 import gsap from 'gsap';
+import Link from 'next/link';
 import { useGSAP } from '@gsap/react'; 
 import '../styles/HeroSection.css';
 
@@ -52,13 +53,13 @@ const HeroSection = () => {
       <div className="home-content ds-fl js-c">
         <div className="text">
           <div className="text__one">Hi, my name is</div>
-          <div className="text__two">Niket Deshmukh.</div>
+          <div className="text__two" style={{fontWeight:'700'}}>Niket Deshmukh.</div>
           <div className="text__down">I build things for the web</div>
           <div className="text__three">Web developer</div>
           <div className="text__four">From India</div>
         </div>
         <div className="button__resume">
-          <button>Resume</button>
+         <Link href="./Niketdeshmukh.pdf"> <button>Resume</button></Link>
         </div>
       </div>
     </section>

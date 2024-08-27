@@ -46,7 +46,7 @@ export default function Home() {
       <About/>
       <Experience/>
       <Project/>
-      <DemoSlider data={dataSlider}/>
+      {/* <DemoSlider data={dataSlider}/> */}
       <Contact/>
     </main>
   );
