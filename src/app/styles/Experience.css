@@ -6,7 +6,7 @@
     -webkit-box-align: center;
     align-items: center;
     position: relative;
-    margin: 10px 8.8rem 40px;
+    margin: 10px 6.8rem 40px;
     /* width: 100%; */
     font-size: clamp(var(--fz-md), 3vw, var(--fz-xl));
     white-space: nowrap;
@@ -54,6 +54,9 @@
   @media only screen and (max-width: 600px) {
     #experience-section .experience-wrapper {
       padding: 30px 0;
+    }
+    .numbered__heading_02 {
+      margin: 10px 2.8rem 40px;
     }
   }
   

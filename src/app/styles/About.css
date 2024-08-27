@@ -137,3 +137,9 @@
         width: 350px;
     }
 }
+
+@media (max-width: 500px){
+  .skills-list{
+    margin: 20px -23px 0px;
+  }
+}
